@@ -1,0 +1,115 @@
+<!-- views/ex.njk -->
+{% extends "base.njk" %}
+
+{% block content %}
+  <section class="section section-subscribe barba-container">
+    <!-- CONTACT-->
+    <h2>
+      <span>SUBSCRIBE</span></h2>
+    <div class="section-content">
+
+      <div id="section-subscribe" class="content-subscribe" >
+
+        <!-- MAILCHIMP -->
+        <div id="mc_embed_shell" class="subscribe-wrapper">
+
+          <h3 class="signup">
+            <img src="images/logo_white.png" width="100px" alt="ENDLESS - Subscribe, logo">
+
+            <b>Subscribe to ENDLESS ACCESS to receive a free weekly newsletter which includes:</b>
+          </h3>
+
+          <div id="mc_embed_signup">
+            <ul class="subscribe-incentives" style="--w:100%;--d:300px;--angle:145deg;">
+              <li style="--animation-order: 1;">
+                <span>STREET</span>
+                    Receive exclusive insight into the latest artwork displayed on the street.</li>
+
+              <li style="--animation-order: 2;">
+                <span>STUDIO</span>
+                    Endless will give an update on his latest artworks and studio experiments. </li>
+
+              <li style="--animation-order: 3;">
+                <span>ARTWORLD</span>
+                    An Endless selection of interesting news from around the creative world.</li>
+
+              <li style="--animation-order: 4;">
+                <span>PHILOSOPHY </span>
+                    Helpful thoughts and insights to help you stay creative and think in new ways.</li>
+
+              <li style="--animation-order: 5;">
+                <span>DISCOVER</span>
+                    Endless shares his latest findings, from books to exhibitions and podcasts. </li>
+
+              <li style="--animation-order: 6;">
+                <span>EXCLUSIVE</span>
+                      Be the first to get exclusive invites to Endless exhibitions and events. </li>
+
+              <li style="--animation-order: 7;">
+
+                <form action="https://endlesstheartist.us18.list-manage.com/subscribe/post?u=bc2e86f909c809194fe39030a&amp;id=a5513f6722&amp;f_id=00809be6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" autocomplete="on" >
+                  <div id="mc_embed_signup_scroll">
+                    <!-- <p>Subscribe to get exclusive invites to exhibitions and events. You will also go into a draw to win Endless gifts throughout the year. </p> -->
+
+                    <div class="indicates-required">
+                      <span class="asterisk">*</span> indicates required</div>
+
+                    <div class="mc-row">
+                      <div class="mc-field-group mc-first">
+                        <label for="mce-FNAME">First Name: <span class="asterisk">*</span></label>
+                        <input type="text" name="FNAME" class="text required" id="mce-FNAME" value="" required="">
+                      </div>
+
+                      <div class="mc-field-group mc-last">
+                        <label for="mce-LNAME">Last Name: <span class="asterisk">*</span></label>
+                        <input type="text" name="LNAME" class="text required" id="mce-LNAME" value="" required="">
+                      </div>
+                    </div>
+
+                    <div class="mc-row">
+                      <div class="mc-field-group mc-email">
+                        <label for="mce-EMAIL">Email Address: <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="" autocomplete="email"></div>
+
+                    </div>
+
+                    <div aria-hidden="true" style="position: absolute; left: -5000px;"><input type="text" name="b_bc2e86f909c809194fe39030a_a5513f6722" tabindex="-1" value=""></div>
+
+                    <div class="clear"><input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe"></div>
+
+                    <div hidden=""><input type="hidden" name="tags" value="3004395,3004397,3004396,3004394"></div>
+                    <div id="mce-responses" class="clear">
+                      <div class="response" id="mce-error-response" style="display: none;"></div>
+
+                      <div class="response" id="mce-success-response" style="display: none;"></div>
+                    </div>
+                  </div>
+                </form>
+
+              </li>
+            </ul>
+          </div>
+          <script type="text/javascript" src="scripts/mc-validate.js"></script>
+          <script type="text/javascript">
+            (function ($) {
+              window.fnames = new Array();
+              window.ftypes = new Array();
+              fnames[0] = 'EMAIL';
+              ftypes[0] = 'email';
+              fnames[1] = 'FNAME';
+              ftypes[1] = 'text';
+              fnames[2] = 'LNAME';
+              ftypes[2] = 'text';
+            }(jQuery));
+            var $mcj = jQuery.noConflict(true);
+          </script>
+        </div>
+        <p>
+          <img src="images/2024/street-posters.jpg" width="100%" alt="ENDLESS - Street Posters, photo">
+        </p>
+
+      </div>
+
+    </div>
+    {% include "partials/gold.njk" %}
+  </section>
+{% endblock %}

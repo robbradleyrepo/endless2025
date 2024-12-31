@@ -1,28 +1,32 @@
-<!-- views/about.njk -->
+<!-- views/books.njk -->
 {% extends "base.njk" %}
 
 {% block content %}
-<section class="section section-books barba-container">
-	<!-- BOOKS-->
-	<h2><span>BOOKS</span></h2>
-	<div class="section-content">
-		<div id="content-books" class="content-books">
-			<div class="books-inner">
-				<div class="books-copy editable-text">
-					<img src="images/2024/book-cover.png" alt="ENDLESS VOL. 1 - Cover" class="pri"/> 
-				</div>
-				<p> 
-					ENDLESS
-					<br>Vol. 1
-					<br>The Collectors Book. 
-					<br>Produced by <br><a target="new" href="https://criscontinicontemporary.com/artists/36-endless/" title="Endless @ Cris Contini Contemporary website, opens in new window...">Cris Contini Contemporary</a>. 
-				</p>
-			</div>
-		</div>
-		<div class="books-video">
-			<video webkit-playsinline playsinline muted controls preload="metadata" src="media/book.mp4"></video>
-		</div>  
-	</div>
-	{% include "partials/gold.njk" %}
-</section>
-{% endblock %}
+  <section class="section section-books barba-container">
+    <!-- BOOKS-->
+    <h2>
+      <span>BOOKS</span></h2>
+    <div class="section-content">
+      <div id="content-books" class="content-books">
+
+        <div class="books-inner">
+          <div class="books-copy editable-text">
+            <img src="images/2024/book-cover.png" alt="ENDLESS VOL. 1 - Cover" class="pri"/>
+            <div>
+              <p>
+                ENDLESS
+                <br>Vol. 1
+                <br>The Collectors Book.
+                <br>Produced by <br>
+                <a target="new" href="https://criscontinicontemporary.com/artists/36-endless/" title="Endless @ Cris Contini Contemporary website, opens in new window...">Cris Contini Contemporary</a>.
+              </p>
+            </div>
+          </div>
+
+          <div class="books-video">
+            <video webkit-playsinline="" playsinline="" muted="" controls="" preload="metadata" src="media/book.mp4"></video>
+          </div>
+      </div>
+      {% include "partials/gold.njk" %}
+    </section>
+  {% endblock %}
