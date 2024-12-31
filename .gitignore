@@ -1,0 +1,21 @@
+
+.*
+*.egg-info/
+*.py[cod]
+dist/
+node_modules/
+src/media/
+src/static/
+!.cloudbuild/
+!.env.example
+!.gitignore
+!.pre-commit-config.yaml
+!.dockerignore
+
+# Frontend
+!.eslintignore
+!.eslintrc.json
+!.prettierignore
+!.prettierrc.js
+build/
+src/staticbuild/
