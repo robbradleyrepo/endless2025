@@ -2,5 +2,27 @@
 {% extends "base.njk" %}
 
 {% block content %}
-<p>This is a dynamically generated page using Nunjucks.</p>
+  <section class="section section-home barba-container">
+    <!-- HOME-->
+    <h2>
+      <span>HOME</span></h2>
+    <div class="section-content">
+      <div>
+        <img
+              sizes="(min-width: 800px) 800w, (min-width: 320px) 730w"
+              srcset="images/2024/glitch2.png 5456w, images/2024/glitch2-m.png 730w,"
+              src="images/2024/glitch2-m.png"
+              alt="Endless working in studio"
+              class="feature-single glitch-vent glitch-img-1 "
+              >
+        <audio id="soundfx-1" preload class="static-fx">
+          <source src="media/glitch-v1.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+
+      <img sizes="(min-width: 800px) 800w, (min-width: 320px) 730w" srcset="images/2024/glitch1.png 5456w, images/2024/glitch1-m.png 730w," src="images/2024/glitch1-m.png" class="trans"/>
+
+    </div>
+    {% include "partials/gold.njk" %}
+  </section>
 {% endblock %}

@@ -15,6 +15,10 @@ nunjucks.configure('views', {
 app.use(express.static('public'));
 
 // Define routes
+app.get('/', (req, res) => {
+  res.render('index.njk', { title: 'Splash' });
+});
+
 app.get('/index', (req, res) => {
   res.render('index.njk', { title: 'Home' });
 });

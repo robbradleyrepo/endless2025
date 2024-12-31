@@ -2,25 +2,24 @@
 
 <!DOCTYPE html>
 <html lang="en" itemscope itemtype="http://schema.org/WebPage">
-	<head> 		
-		{% include "partials/meta.njk" %}
-		{% include "partials/head.njk" %}
-	</head>
+  <head>
+    {% include "partials/meta.njk" %}
+    {% include "partials/head.njk" %}
+  </head>
 
-	<body>
-		<div class="page-wrap">
-			<div class="banner"></div>
+  <body>
+    <div class="page-wrap">
+      <div class="banner"></div>
 
-			{% include "partials/header.njk" %}
-  			
-			<main id="barba-wrapper" class="body-content">
-				{% block content %}{% endblock %}
-  			</main>
-  			
-			
-			{% include "partials/footer.njk" %}
-  			
-		</div>
-	{% include "partials/scripts.njk" %}
-</body>
+      {% include "partials/header.njk" %}
+
+      <main id="barba-wrapper" class="body-content">
+        {% block content %}{% endblock %}
+      </main>
+
+      {% include "partials/footer.njk" %}
+
+    </div>
+    {% include "partials/scripts.njk" %}
+  </body>
 </html>
