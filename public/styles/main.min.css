@@ -2789,6 +2789,7 @@ header {
 
 
     header h1 a {
+      cursor: none;
       display: block;
       background: url(../images/logo_2x.png) no-repeat;
       background-size: contain;
