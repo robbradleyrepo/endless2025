@@ -1819,6 +1819,12 @@ section {
   /* mix-blend-mode: plus-lighter; */
 }
 
+.gateway-inner h1 a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
 .gateway-content {
   animation: fadeincontent 2.5s ease;
 }
@@ -1844,19 +1850,20 @@ section {
   display: flex;
   flex-direction: row;
   margin-top: 30px;
+  justify-content: center;
 }
 
 .gateway-buttons a {
   margin: 0 40px;
   display: block;
   padding: 10px 20px;
-  color: black;
+  color: red;
   font-size: 22px;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bold;
   width: 200px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.2em;
 }
 
 
@@ -1890,7 +1897,7 @@ a.animated-button:link:after, a.animated-button:visited:after {
   transition: all 0.5s ease 0s;
 }
 a.animated-button:link:hover, a.animated-button:visited:hover {
-  color: white;
+  color: red;
   text-shadow: none;
 }
 a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
@@ -1905,8 +1912,9 @@ a.animated-button:link, a.animated-button:visited {
 
 
 a.animated-button.victoria-four:after {
-  background-color: rgba(0, 0, 0, 0.9);
-  opacity: .2;
+  background-color: rgba(0, 0, 0, 1);
+  /* background-color: white; */
+  opacity: .9;
   transform: translateY(-50%) translateX(-50%) rotate(90deg);
 }
 a.animated-button.victoria-four:hover:after {
@@ -1949,7 +1957,8 @@ a.animated-button:link span {
 
 
 .gateway-inner p {
-  padding-top: 20px;
+  border-bottom: 1px dotted grey;
+  font-weight: 600 !important;
 }
 
 
@@ -2780,7 +2789,6 @@ header {
 
 
     header h1 a {
-      cursor: none;
       display: block;
       background: url(../images/logo_2x.png) no-repeat;
       background-size: contain;
@@ -2791,7 +2799,7 @@ header {
     @media screen and (max-width: 801px) {
       header h1 a {
         top: 16px;
-        cursor: none;
+        /* cursor: none; */
         display: block;
         /* background: url(../images/logo.png) no-repeat; */
         background-size: contain;
@@ -2861,6 +2869,19 @@ footer {
         display: block;
         margin: auto;
         width: 20%; } }
+
+footer .copyright {
+  text-align: center;
+  max-width: 1366px;
+  margin: auto;
+  copyright {
+    font-family: "Source Sans 3", sans-serif, Arial;
+    font-weight: 700;
+    font-size: 75%;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+  }
+}
 
 .icon-menu {
   display: none; }
