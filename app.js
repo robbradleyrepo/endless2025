@@ -16,11 +16,11 @@ app.use(express.static('public'));
 
 // Define routes
 app.get('/', (req, res) => {
-  res.render('index.njk', { title: 'Splash' });
+  res.render('home.njk', { title: 'Home' });
 });
 
 app.get('/index', (req, res) => {
-  res.render('index.njk', { title: 'Home' });
+  res.render('home.njk', { title: 'Home' });
 });
 
 app.get('/about', (req, res) => {
