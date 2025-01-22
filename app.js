@@ -1,6 +1,7 @@
 // app.js
 const express = require('express');
 const nunjucks = require('nunjucks');
+const fs = require('fs');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -11,7 +12,7 @@ nunjucks.configure('views', {
   autoescape: true,
   express: app
 });
-
+app.set('view engine', 'html');
 // Serve static files from the "public" directory
 app.use(express.static('public'));
 
